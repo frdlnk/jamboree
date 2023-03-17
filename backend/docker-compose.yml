@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  auth: 
+    image: j-auth-ms-image
+    ports:
+    - 8000:8080
+  events: 
+    image: j-events-ms-image
+    ports:
+    - 8001:8080
+  in: 
+    image: j-in-ms-image
+    ports:
+    - 8002:8080
